@@ -1,0 +1,118 @@
+{
+    "full_name": "Jason Kai Fung",
+    "current_role": "Associate Software Engineer",
+    "information": {
+        "email_address": "jason-814@hotmail.com",
+        "github_profile": "github.com/JasonFung03",
+        "portfolio_website": "jasonfung.xyz",
+        "linkedin": "linkedin.com/in/fungjason1"
+    },
+    "experience": [
+        {
+            "company_name": "Fidelity Investments",
+            "role_name": "Associate Software Engineer",
+            "location": "Dublin, Ireland",
+            "date_start": "Aug 2024",
+            "date_end": "Present",
+            "bullet_points": [
+                "Actively participated in engineering practices including code/design reviews, environment strategy, and build/deployment pipeline development.",
+                "Contributed to the full product development process, continuously delivering updated product versions through CI/CD tools.",
+                "Gained expertise in Python, Java, Spring Framework, and AWS Microservices.",
+                "Facilitated smooth teamwork across global teams by establishing efficient communication lines.",
+                "Automated various tasks through Python scripting, enhancing efficiency."
+            ]
+        },
+        {
+            "company_name": "Fidelity Investments",
+            "role_name": "Software Engineer Intern",
+            "location": "Dublin, Ireland",
+            "date_start": "Jan 2023",
+            "date_end": "Aug 2023",
+            "bullet_points": [
+                "Actively participated in engineering practices including code/design reviews, environment strategy, and build/deployment pipeline development.",
+                "Contributed to the full product development process, continuously delivering updated product versions through CI/CD tools.",
+                "Gained expertise in Python, Java, Spring Framework, and AWS Microservices.",
+                "Facilitated smooth teamwork across global teams by establishing efficient communication lines.",
+                "Automated various tasks through Python scripting, enhancing efficiency."
+            ]
+        },
+        {
+            "company_name": "Fruitlab Media Ltd",
+            "location": "London, United Kingdom",
+            "role_name": "Community Manager",
+            "date_start": "Aug 2020",
+            "date_end": "March 2022",
+            "bullet_points": [
+                "Lead generation and cold outreach for acquisition of new potential content creators.",
+                "Data analytics in relation to user account funds – identifying fraudulent behaviours",
+                "User support with general issues e.g., orders, bugs, general inquiries.",
+                "Facilitated smooth teamwork across global teams by establishing efficient communication lines.",
+                "Hosted and managed tournaments within the e-sports community."
+            ]
+        }
+    ],
+    "skills": {
+        "Languages": [
+            "Python",
+            "JavaScript",
+            "C++",
+            "C#",
+            "SQL",
+            "Java",
+            "Rust",
+            "TypeScript"
+        ],
+        "Technologies & Tools": [
+            "AWS",
+            "Jenkins",
+            "Terraform",
+            "Docker",
+            "React.JS",
+            "Node.JS",
+            "Spring",
+            ".NET",
+            "Flask",
+            "Pytest",
+            "Playwright",
+            "OpenTofu",
+            "Helm",
+            "Kubernetes",
+            "GitHub Actions"
+        ]
+    },
+    "education": [
+        {
+            "university_name": "Technological University Dublin",
+            "location": "Dublin, Ireland",
+            "degree_name": "BSc (Honours) in Computer Science and Information Technology",
+            "date_start": "Sep 2020",
+            "date_end": "Sep 2024",
+            "gpa": 3.77,
+            "project_description": "We developed an E-Commerce Web Application with Stock Control and Reservation System where I collaborated with a team of three to deliver a fully functional product featuring purchasing, reservation, watchlist (CRUD functionality), and checkout capabilities using the Stripe API were available to users.",
+            "tech_stack": "Python, Django Web Framework, Selenium Web Driver, JavaScript, Pytest"
+        }
+    ],
+    "projects": [
+        {
+            "project_name": "Git Tree View",
+            "description": "A git treee view wbeiste.",
+            "Tech Stack": [
+                "React",
+                "Typescript"
+        ]
+        },
+        {
+            "project_name": "CLIPR Technology",
+            "description": "CLIPR Technology is a clipping software where users can record back a certain time.",
+            "Tech Stack": [
+            "AWS",
+            "Python",
+            "React",
+            "Typescript",
+            "Jenkins Core"
+        ]
+        }
+    ],
+
+    "references": "*Provided upon request*"
+}
