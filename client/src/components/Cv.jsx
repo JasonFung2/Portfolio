@@ -1,11 +1,7 @@
 import React, { useRef } from 'react';
-import { useReactToPrint } from 'react-to-print';
-import jsPDF from 'jspdf'; // Import jsPDF
-import html2canvas from 'html2canvas'; // Import html2canvas
 
 import cv from './cv.json';
 
-// Component to print
 const CVPrint = React.forwardRef((props, ref) => {
   const { formData } = props;
 
@@ -143,25 +139,10 @@ const CVPrint = React.forwardRef((props, ref) => {
 const Cv = () => {
   const componentRef = useRef(null);
 
-  const handlePrint = () => {
-    html2canvas(componentRef.current, { scale: 2 }).then((canvas) => {
-      const doc = new jsPDF();
-      const imgData = canvas.toDataURL('image/png');
-      const imgWidth = 210; // A4 width in mm
-      const imgHeight = (canvas.height * imgWidth) / canvas.width;
-
-      // Add the image to the PDF
-      doc.addImage(imgData, 'PNG', 0, 0, imgWidth, imgHeight);
-
-      // Save the PDF
-      doc.save('cv.pdf');
-    });
-  };
-
   return (
     <div className="flex items-center justify-center mt-2">
         <CVPrint formData={cv} ref={componentRef} />
-      </div>
+    </div>
   );
 };
 

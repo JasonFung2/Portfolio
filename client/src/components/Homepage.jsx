@@ -4,14 +4,11 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import cv from "./cv.json";
-import jsPDF from "jspdf";
-import html2canvas from "html2canvas";
 
 function HomePage() {
   const [formData, setFormData] = useState(cv);
   const cvRef = useRef();
 
-  // Handle input change to update formData
   const handleInputChange = (e, path) => {
     const { value } = e.target;
     const keys = path.split(".");
@@ -26,7 +23,6 @@ function HomePage() {
     setFormData(newFormData);
   };
 
-  // Render form fields based on JSON structure
   const renderFormFields = (data, path = "") => {
     return Object.entries(data).map(([key, value]) => {
       const newPath = path ? `${path}.${key}` : key;
@@ -78,7 +74,6 @@ function HomePage() {
     });
   };
 
-  // Render CV data with proper formatting
   const renderCVData = (data) => {
     return Object.entries(data).map(([section, content]) => (
       <div key={section} className="border-b border-gray-300 pb-4 mb-4">
@@ -100,42 +95,8 @@ function HomePage() {
     ));
   };
 
-  // Format keys to be more readable
   const formatKey = (key) => {
     return key.replace(/_/g, " ").replace(/\b\w/g, (char) => char.toUpperCase());
-  };
-
-  // Function to generate and download PDF
-  const handleSaveToPDF = () => {
-    if (cvRef.current) {
-      html2canvas(cvRef.current).then((canvas) => {
-        const imgData = canvas.toDataURL("image/png");
-        const pdf = new jsPDF();
-        const imgWidth = 210; // A4 width in mm
-        const pageHeight = 295; // A4 height in mm
-        const imgHeight = canvas.height * imgWidth / canvas.width;
-        let heightLeft = imgHeight;
-
-        let position = 0;
-
-        // Add the first page
-        pdf.addImage(imgData, 'PNG', 0, position, imgWidth, imgHeight);
-        heightLeft -= pageHeight;
-
-        // Add additional pages if needed
-        while (heightLeft >= 0) {
-          position = heightLeft - imgHeight;
-          pdf.addPage();
-          pdf.addImage(imgData, 'PNG', 0, position, imgWidth, imgHeight);
-          heightLeft -= pageHeight;
-        }
-
-        // Set text color to black for the entire document
-        pdf.setTextColor(0, 0, 0); // RGB for black
-
-        pdf.save("cv_data.pdf");
-      });
-    }
   };
 
   return (
