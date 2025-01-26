@@ -1,12 +1,14 @@
 import React, { useRef } from 'react';
 
 import cv from './cv.json';
+import { useTheme } from "@/components/theme-provider"
 
 const CVPrint = React.forwardRef((props, ref) => {
   const { formData } = props;
 
   return (
-    <div className="flex flex-col justify-start overflow-auto">
+    // Force light theme by adding the "light" class
+    <div className="light flex flex-col justify-start overflow-auto">
       <div className="" ref={ref}>
         <div className="mb-4">
           <h1 className="name font-semibold text-center m-0 leading-none">{formData?.full_name || 'N/A'}</h1>
