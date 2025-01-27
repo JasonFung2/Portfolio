@@ -1,6 +1,8 @@
 {
     "full_name": "Jason Kai Fung",
     "current_role": "Associate Software Engineer",
+    "location": "Dublin, Ireland",
+    "languages": "English & Cantonese",
     "information": {
         "email_address": "jason-814@hotmail.com",
         "github_profile": "github.com/JasonFung03",
@@ -14,6 +16,7 @@
             "location": "Dublin, Ireland",
             "date_start": "Aug 2024",
             "date_end": "Present",
+            "short_description": "Junior developer of cloud-based solutions, and implemented CI/CD pipelines.",
             "bullet_points": [
                 "Actively participated in engineering practices including code/design reviews, environment strategy, and build/deployment pipeline development.",
                 "Contributed to the full product development process, continuously delivering updated product versions through CI/CD tools.",
@@ -28,6 +31,7 @@
             "location": "Dublin, Ireland",
             "date_start": "Jan 2023",
             "date_end": "Aug 2023",
+            "short_description": "Junior developer of cloud-based solutions, and implemented CI/CD pipelines.",
             "bullet_points": [
                 "Actively participated in engineering practices including code/design reviews, environment strategy, and build/deployment pipeline development.",
                 "Contributed to the full product development process, continuously delivering updated product versions through CI/CD tools.",
@@ -42,6 +46,7 @@
             "role_name": "Community Manager",
             "date_start": "Aug 2020",
             "date_end": "March 2022",
+            "short_description": "Community manager which I communicated and helped users across the platform.",
             "bullet_points": [
                 "Lead generation and cold outreach for acquisition of new potential content creators.",
                 "Data analytics in relation to user account funds – identifying fraudulent behaviours",
@@ -77,7 +82,8 @@
             "OpenTofu",
             "Helm",
             "Kubernetes",
-            "GitHub Actions"
+            "GitHub Actions",
+            "Angular"
         ]
     },
     "education": [
