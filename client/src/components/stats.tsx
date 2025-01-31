@@ -138,7 +138,7 @@ export function Stats() {
       {stats.map((stat) => (
         <Card key={stat.label}>
           <CardContent className="flex items-center gap-4 p-4">
-            <div className="text-3xl"><img src={`/src/components/public/${stat.img}.svg`}></img></div>
+            <div className="text-3xl"><img src={`/public/${stat.img}.svg`}></img></div>
             <div>
               <p className="text-2xl font-bold text-white">{stat.number}</p>
               <p className="text-sm text-gray-400">{stat.label}</p>
