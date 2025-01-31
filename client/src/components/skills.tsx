@@ -24,7 +24,7 @@ export function Skills() {
               <TooltipTrigger asChild>
                 <div className="flex items-center justify-center rounded-lg border border-gray-800 p-3 h-20">
                   <img
-                    src={`/public/${skill}.svg`}
+                    src={`/${skill}.svg`}
                     alt={skill}
                     className="w-12 h-12 object-contain"
                   />

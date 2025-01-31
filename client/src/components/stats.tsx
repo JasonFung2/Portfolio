@@ -1,14 +1,16 @@
 import { Card, CardContent } from "@/components/ui/card";
 import cv from "./cv.json";
 import { useState, useEffect } from "react";
-
+import * as imgs from "../../public"
+import AngularIcon from "../../public";
+import React from "react";
 const GITHUB_API_URL = "https://api.github.com/users/JasonFung2/repos";
 
 export function Stats() {
   const [formData, setFormData] = useState(cv);
   const [timeSinceLastCommit, setTimeSinceLastCommit] = useState<string | null>("Fetching...");
   const [commitDate, setCommitDate] = useState<number | null>(null);
-
+  console.log(imgs)
   const calculateExperience = (experience: any[]) => {
     let totalMonths = 0;
 
@@ -138,7 +140,7 @@ export function Stats() {
       {stats.map((stat) => (
         <Card key={stat.label}>
           <CardContent className="flex items-center gap-4 p-4">
-            <div className="text-3xl"><img src={`/public/${stat.img}.svg`}></img></div>
+            <div className="text-3xl"><AngularIcon />{`${imgs.default}`}</div>
             <div>
               <p className="text-2xl font-bold text-white">{stat.number}</p>
               <p className="text-sm text-gray-400">{stat.label}</p>
